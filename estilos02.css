@@ -1,0 +1,16 @@
+.box p {
+    font-size: 20 px;
+    color: orangered;
+    line-height: 2.5;
+    }
+section ul {
+    list-style: square;
+    color: blueviolet;
+}
+nav a {
+    text-decoration: solid;
+    color: brown;
+}
+div > p {
+    color: palevioletred;
+}
