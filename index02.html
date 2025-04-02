@@ -80,15 +80,82 @@
         <h2>Ejercicio 3:</h2>
         <h3>Selector de hermano adyacente</h3>
         <div>
-            <p>
-                El selector de hijo directo es utilizado para seleccionar elementos que son hijos directos del contenedor. Sin afectar a los elementos que estan dentro de los elementos hijos (Nietos).  
-            </p>
-            <p>
-                Por ejemplo, si tenemos un contenedor con un hijo directo y un nieto "h4". solo se modificara el elemento hijo del contenedor. 
-
-                <h4>NO modificado</h4>
-            </p>
+            <section>
+                <article class="hola">
+                    El selector hermano adyacente,selecciona un elemento que está inmediatamente después de otro. 
+               </article>
+               <article class="chao">
+                   Por ejemplo, Donde " article con clase hola" es el elemento de referencia y "article con clase chao" es el que es modificado con un color de fondo aquamarine y un borde de color marrón. 
+               </article>
+            </section>
         </div>
+    </div>
+    <div>
+        <h2>Ejercicio 4:</h2>
+        <h3>Selector de hermanos generales</h3>
+        <div>
+            <section>
+                <h2>Titulo</h2>
+                <p>
+                    El selector de hermanos generales se usa para seleccionar todos los elementos hermanos que vienen después de un elemento específico, sin importar si están inmediatamente después o no. 
+               </p>
+               <p>
+                   Por ejemplo, los elementos modificados fueron los "p" por un color verde y un tamaño de letra de 35, los cuales estan después del "h2". 
+               </p>
+            </section>
+        </div>
+    </div>
+    <div>
+        <h2>Ejercicio 5:</h2>
+        <h3>Combinadores de selectores</h3>
+        <div>
+            <nav class="navegacion">
+                <h2>Navegación</h2>
+                <ul>
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                </ul>
+            </nav>
+            1. Selector de descendencia: Todos los elementos "a" dentro de un "nav con clase navegacion" tendrán color azul oscuro, decoracion ninguna y tamaño 50.<br>
+            2. Selector de hijo directo: se esta modificando a los elemnto "a" que son hijos de "li" que al mismo tiempo es hijo  de "ul". 
+            <nav>
+                    <h2>Navegación 02 </h2>
+                    <ul class="nice">
+                        <li><a href="#">Hola</a></li>
+                        <li><a href="#">Chao</a></li>
+                        <li><a href="#">Hasta luego</a></li>
+                        <li><a href="#">Buenos dias</a></li>
+                    </ul>
+            </nav>
+                3. Selector de hermano adyacente: Solo el estilo a los "li" que son hermanos adyacentes dentro de un contenedor "ul". <br>
+                4. Selector de hermanos generales: Aplica la modificacio a todos los hermanos generales del primer "li" osea la da un tamaño 40. 
+        </div>
+    </div>
+    <div class="cartas">
+        <h2>Ejercicio 6:</h2>
+        <h3>Tarjetas</h3>
+        <p>
+            Selector de hijo directo: <br>
+            Solo afecta a todos los parrafos que están dentro de un contenedor con la clase cartas el cual el color del texto a rojo oscuro. 
+            <br><br>
+            Selector hermano adyacente: Tambien fue modificado por que, afecta l primer párrafo que aparece justo después de un "h3". No afectará otros párrafos que sigan después. 
+            Cambia su tamaño de fuente a 18 y lo pone en itálica.
+            <br><br>
+            Selector de hermanos generales:Afecta todos los párrafos  que aparecen después de un "h3".Les agrega un borde izquierdo gris de 5 y un espaciado a la izquierda de 30. 
+        </p>
+        <div class="cartas2">
+            <p>Selector descendente</p>
+            <p>Aqui solo se modofican los parrofos dentro de un contenedor con clase cartas2 el cual cambia el color del texto a azul y lo pone en negrita.</p>
+            <p>Otro parrafo modificado por Selector descendente </p>
+        </div>
+        <p>
+            Otro parrafo que fue afectado por Selector de hijo directo.
+
+            Tambien se modifico por el  Selector de hermanos generales.
+
+        </p>
     </div>
 </body>
 </html>

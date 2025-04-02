@@ -1,5 +1,6 @@
+/*Ejercicio 01*/
 .box p {
-    font-size: 20 px;
+    font-size: 20px;
     color: orangered;
     line-height: 2.5;
     }
@@ -11,6 +12,49 @@ nav a {
     text-decoration: solid;
     color: brown;
 }
+/*Ejercicio 02*/
 div > p {
     color: palevioletred;
+}
+/*Ejercicio 03*/
+article + article{
+    background-color: aquamarine;
+    border: 3px solid brown;
+}
+/*Ejercicio 04*/
+h2 ~ p {
+    color: green;
+    font-size: 35px;
+}
+/*Ejercicio 05*/
+.navegacion a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 50px;
+}
+ul > li > a {
+    border: 6px solid cadetblue;
+    border-radius: 5px;
+}
+ul > li + li {
+    background-color: lightgreen;
+}
+ul > li ~ li{
+    font-size: 40px;
+}
+/*Ejercicio 06*/
+.cartas2 p {
+    color: blue;
+    font-weight: bold;
+}
+.cartas > p {
+    color: darkred;
+}
+h3 + p {
+    font-size: 18px;
+    font-style: italic;
+}
+h3 ~ p {
+    border-left: 5px solid gray;
+    padding-left: 30px;
 }

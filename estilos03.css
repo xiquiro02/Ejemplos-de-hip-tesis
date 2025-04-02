@@ -1,0 +1,95 @@
+/* Selector de descendencia: Afecta todos los párrafos dentro de .contenedor */
+.contenedor p {
+    color: blue;
+}
+/* Selector de hijo directo: Afecta solo los párrafos hijos directos de div */
+div > p {
+    font-weight: bold;
+}
+/* Selector de hermano adyacente: Solo el primer <p> después de <h2> */
+h2 + p {
+    text-decoration: underline;
+}
+/* Selector de hermanos generales: Todos los <p> después del primer <p> */
+p ~ p {
+    font-style: italic;
+}
+/* Ejercicio 02*/
+.contenedor02 {
+    display: flex; /* Distribuye los elementos en una fila */
+    box-sizing: border-box; /*  define cómo se calcula el tamaño total de un elemento, incluyendo su padding y border. */
+    margin: 20px; /* 10px en todas las direcciones */ 
+    border: 3px solid blueviolet; /* Define un borde de color violeta*/
+}
+.contenido {
+    display: block; /* Se mantiene como bloque */
+    box-sizing: content-box;  /* El padding y el border se suman al tamaño total */
+    margin: 10px 20px 30px 40px; /* arriba, derecha, abajo, izquierda */
+}
+.box {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Borde gris claro */
+}
+.final {
+    display: flex; /* Contenedor flexible */
+    background-color: #ddd; /* Fondo gris */
+    padding: 15px;  /* Fondo gris */
+    border-radius: 8px; /* Bordes redondeados */
+}
+/* Ejercicio 03*/
+/* Selector de descendencia: Afecta todos los enlaces dentro del menú */
+.menu a {
+    color: blue; /* Cambia el color del texto a azul */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+/* Selector de hijo directo: Solo afecta los <p> dentro del <nav>, pero no los de fuera */
+.menu > p {
+    color: darkred; /* Cambia el color del texto a rojo oscuro */
+    font-style: italic; /* Aplica cursiva al texto */
+}
+
+/* Selector de hermano adyacente: Aplica estilos al primer <p> que está justo después del <nav> */
+nav + p {
+    font-size: 18px; /* Aumenta el tamaño de la fuente a 18px */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    color: green; /* Cambia el color del texto a verde */
+}
+
+/* Selector de hermanos generales: Afecta todos los <p> que están después del <nav> */
+nav ~ p {
+    border-left: 3px solid gray; /* Agrega un borde gris a la izquierda */
+    padding-left: 10px; /* Añade un espacio a la izquierda para separar el texto del borde */
+}
+/* Ejercicio 04*/
+/* Selector de descendencia:  Afecta todos los párrafos  dentro del ` CLASE: perfil`, sin importar su nivel de anidación.*/
+.perfil p {
+    color: #444; /* Define el color del texto en un tono gris oscuro.*/
+    font-size: 14px; /* Tamaño de la fuente en 14 */
+}
+/* Selector de hijo directo: Afecta solo el `h2` que es hijo directo de `CLASE: perfil`.*/
+.perfil > h2 {
+    color: #333; /* Cambia el color del texto a un gris más oscuro.*/
+    font-size: 20px; /* amaño de la fuente en 20 */
+}
+/* Selector de hermano adyacente: Afecta solo el primer `p` que aparece justo después de un `h2`.*/
+h2 + p {
+    font-style: italic; /* Aplica un estilo de fuente en cursiva al párrafo */
+    color: #666; /* Cambia el color del texto a un gris intermedio*/
+}
+/* Selector de hermanos generales: Afecta todos los `p` que aparecen después de `CLASE: descripcion` dentro de `CLASE: perfil`.*/
+.descripcion ~ p {
+    font-weight: bold; /* el texto de los párrafos se muestre en negrita*/
+}
+/* Selector de descendencia: Afecta todos los enlaces `a` dentro de ` CLASE redes`.*/
+.redes a {
+    background-color: #007bff; /* Asigna un color de fondo azul a los enlaces.*/
+    color: white; /*  Cambia el color del texto a blanco*/
+    text-decoration: none; /* Elimina el subrayado de los enlaces.*/
+    padding: 5px 10px; /* Agrega 5 de espacio interno arriba y abajo, y 10 a los lados*/
+    margin: 5px; /* Agrega un margen externo de 5 en todas las direcciones.*/
+    border-radius: 5px; /* Redondea las esquinas de los enlaces con un radio de 5.*/
+}
